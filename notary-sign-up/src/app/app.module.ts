@@ -5,12 +5,12 @@ import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
-import { TestCompComponent } from './test-comp/test-comp.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestCompComponent
+    HeaderComponent
   ],
   imports: [
     AlertModule.forRoot(),
@@ -19,6 +19,6 @@ import { TestCompComponent } from './test-comp/test-comp.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class AppModule { }
