@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     AlertModule.forRoot(),
@@ -19,6 +21,6 @@ import { HeaderComponent } from './header/header.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent]
-})
+  bootstrap: [AppComponent]
+}) 
 export class AppModule { }
